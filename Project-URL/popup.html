@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+  <style>
+    button {
+      height: 30px;
+      width: 30px;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="https://www.wappalyzer.com/" class="header__link" target="_blank">
+      <img class="header__logo" src="image/iconfinder_Knight_2913116 (3).png" />
+    </a>
+  </div>
+
+  <div class="container">
+    <table style="padding-left: 50px; width: 400px; padding-top: 20px;">
+      <tr>
+        <td class="header-title" colspan="3">
+          <center>DETECT URL</center>
+        </td>
+        <td>
+          <!-- <label class="switch">
+            <input id="OnAction" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label> -->
+
+        </td>
+      </tr>
+      <tr>
+        <td class="title">Web current:</td>
+        <td class="content" colspan="2" id='urlCurrent'></td>
+      </tr>
+      <tr>
+        <!-- <td class="title">Web status:</td>
+        <td class="content" id='webStatus'></td> -->
+        <td class="title">Detect by:</td>
+        <td class="content" id='detectBy'></td>
+      </tr>
+      <tr>
+        <td class="title">Exclude URL:</td>
+        <td class="content" colspan="2">
+          <input type="text" style="width: 150px;" id='excludeUrl' />
+        </td>
+        <td>
+          <button class="btn btn-add" type="button" id='OnActionExclude'>Add</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="title">Delete URL Exclude:</td>
+        <td class="content" colspan="2">
+          <input type="text" style="width: 150px;" id='DeleteUrlExclude' />
+        </td>
+        <td>
+          <button class="btn btn-add" type="button" id='OnActionDelete'>Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="title">Report URL:</td>
+        <td class="content" colspan="2">
+          <input type="text" style="width: 150px;" id='reportUrl' />
+        </td>
+        <td>
+          <button class="btn btn-add" type="button" id='OnActionReport'>Report</button>
+        </td>
+      </tr>
+    </table>
+    
+    <button class="btn btn-report" type="button" id='OnActionReport2'>REPORT ISSUE</button>
+
+    <p style="float:right;"><i>Interested in Detect URL Plus on mobile?</i></p>
+
+
+
+
+    <!-- <div class="terms" style="padding-left: 20%;">
+      <div class=""></div>
+      <div class="title-header">Detect URL</h2>
+      <h3 id='urlCurrent'></h3>
+      <h3 id='webStatus'></h3>
+      <h3>Detect by: AI</h3>
+      <label class="switch">
+       <input id="OnAction" type="checkbox" checked />
+        <span class="slider round"></span>
+      </label> 
+      <button class="save_status_button" id="actionSave" style="visibility:hidden;" type="submit"
+        onClick="actionSaveUrl()">Save</button>
+      <hr>
+      <h2>Exclude URL:</h2>
+      <input type="text" />
+      <button>Add Exclude Url</button>
+      <hr>
+      <h2>Report URL:</h2>
+      <input type="text" />
+      <button>Report Url</button>
+    </div> -->
+  </div>
+  <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="popup.js"></script>
+  <script type="text/javascript" src="background.js"></script>
+</body>
+
+</html>

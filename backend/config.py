@@ -1,0 +1,1 @@
+MONGO_CONECTION = "mongodb+srv://whoops:123456ABCabc@whoops-qhh2q.mongodb.net/test?retryWrites=true&w=majority"

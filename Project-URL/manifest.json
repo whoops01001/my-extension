@@ -1,0 +1,37 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": ["activeTab", "declarativeContent", "storage", "webRequest", "tabs",
+    "*://*.google.com/", "webRequestBlocking", "http://*/*",
+    "https://*/*", "<all_urls>", "webNavigation", "contextMenus"
+  ],
+  "background":{
+    "scripts": ["background.js","jquery-3.3.1.min.js"],
+    "persistent": true 
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "image/iconfinder_Knight_2913116.png",
+      "32": "image/iconfinder_Knight_2913116 (1).png",
+      "48": "image/iconfinder_Knight_2913116 (2).png",
+      "128": "image/iconfinder_Knight_2913116 (3).png"
+    }
+  },
+  "icons": {
+    "16": "image/iconfinder_Knight_2913116.png",
+    "32": "image/iconfinder_Knight_2913116 (1).png",
+    "48": "image/iconfinder_Knight_2913116 (2).png",
+    "128": "image/iconfinder_Knight_2913116 (3).png"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com/ga.js https://example.cc; object-src 'self'",
+  "options_page": "options.html",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://developer.chorme.com/*"],
+      "js": ["jquery-3.3.1.min.js", "background.js"]
+    }
+  ]
+}

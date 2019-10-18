@@ -1,0 +1,326 @@
+body {
+  background: #fbfbfb;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  height: 12.8rem;
+  margin: 0;
+  overflow: hidden;
+  width: 25rem;
+}
+
+html,
+h1,
+h2 {
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  background: linear-gradient(160deg, #930583, #54034a);
+  height: 4rem;
+  display: flex;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+position: absolute;
+  content: "";
+  height: 22px;
+  width: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 4px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.i18n_status_header {
+  display: inline-block;
+  width: 140px;
+  height: 34px;
+  transition: 0.5s ease;
+  top: 35%;
+  left: 20%;
+}
+
+.link_web_current {
+  font-size: small;
+  display: inline-block;
+  width: 190px;
+  height: 34px;
+  transition: 0.5s ease;
+  top: 50%;
+  left: 20%;
+}
+
+.status_web_current {
+  font-size: small;
+  display: inline-block;
+  width: 190px;
+  height: 34px;
+  transition: 0.5s ease;
+  top: 70%;
+  left: 20%;
+}
+
+.save_status_button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  transition: 0.5s ease;
+  top: 55%;
+  left: 80%;
+}
+
+.terms__wrapper {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  transition: 0.5s ease;
+  left: 20%;
+}
+
+footer>span {
+  flex-grow: 1;
+}
+
+footer>button {
+  width: var(--font-size-primary);
+  margin-right: var(--margin-primary-half);
+  margin-left: var(--margin-primary-half);
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity 0.1s ease-in;
+}
+
+footer>button:hover {
+  opacity: 1;
+}
+
+footer>button.apple {
+  background-image: url(icons/apple.svg);
+}
+
+footer>button.android {
+  background-image: url(icons/android.svg);
+}
+
+label.toggle {
+  cursor: pointer;
+}
+
+.item.active:not(.item-divider):not(.item-input):not(.item-input-inset),
+.item-complex.active .item-content {
+  background-color: #fff !important;
+  border-color: #ddd !important;
+}
+
+.item.animate-enter-leave {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 50px;
+  position: relative;
+  top: 0px;
+}
+
+.item.animate-enter-leave.ng-leave,
+.item.animate-enter-leave.ng-enter {
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+.item.animate-enter-leave.ng-leave.ng-leave-active,
+.item.animate-enter-leave.ng-enter {
+  opacity: 0;
+  line-height: 0px;
+  top: -30px;
+}
+
+.item.animate-enter-leave.ng-enter.ng-enter-active,
+.item.animate-enter-leave.ng-leave {
+  opacity: 1;
+  line-height: 50px;
+  top: 0;
+}
+
+a.ion-link {
+  font-size: 20px;
+  color: #00c;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  transition: background-color 0.5s linear;
+}
+
+.grade-a input[type="text"].ng-invalid {
+  background-color: #fee;
+}
+
+
+
+
+
+
+
+
+
+
+
+label.toggle {
+  cursor: pointer;
+}
+
+.item.active:not(.item-divider):not(.item-input):not(.item-input-inset),
+.item-complex.active .item-content {
+  background-color: #fff !important;
+  border-color: #ddd !important;
+}
+
+.item.animate-enter-leave {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 50px;
+  position: relative;
+  top: 0px;
+}
+
+.item.animate-enter-leave.ng-leave,
+.item.animate-enter-leave.ng-enter {
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+.item.animate-enter-leave.ng-leave.ng-leave-active,
+.item.animate-enter-leave.ng-enter {
+  opacity: 0;
+  line-height: 0px;
+  top: -30px;
+}
+
+.item.animate-enter-leave.ng-enter.ng-enter-active,
+.item.animate-enter-leave.ng-leave {
+  opacity: 1;
+  line-height: 50px;
+  top: 0;
+}
+
+a.ion-link {
+  font-size: 20px;
+  color: #00c;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  transition: background-color 0.5s linear;
+}
+
+.grade-a input[type="text"].ng-invalid {
+  background-color: #fee;
+}
+
+.header-title {
+  color: #32067c;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 20px;
+font-family: calibri;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.content {
+  color: rgb(53, 131, 53);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #2196f3;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #2196f3;
+  width: 100%;
+}
+
+.btn:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.btn-report{
+  background-color: crimson;
+}
+
+.btn-report:hover{
+  background-color: crimson;
+}
